@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+//Site Route
+Route::get('/', 'SiteController@showHome');
+Route::get('{slug}', 'SiteController@showPost');
+//Auth Route
+
+//Subs Route
+
+//Account Route
